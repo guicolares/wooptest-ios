@@ -3,18 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D414FD4525EC4C772DA81FB /* Pods_wooptestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCD3C4426178A574A87A3CA /* Pods_wooptestTests.framework */; };
+		A9ADB411248016FB00F58D11 /* WPEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADB410248016FB00F58D11 /* WPEventTableViewCell.swift */; };
+		A9ADB41524802ECA00F58D11 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADB41424802ECA00F58D11 /* UIView+Extension.swift */; };
 		A9BDA354247CC7D20016CB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA353247CC7D20016CB9C /* AppDelegate.swift */; };
-		A9BDA356247CC7D20016CB9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA355247CC7D20016CB9C /* SceneDelegate.swift */; };
 		A9BDA358247CC7D20016CB9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA357247CC7D20016CB9C /* ViewController.swift */; };
 		A9BDA35B247CC7D20016CB9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BDA359247CC7D20016CB9C /* Main.storyboard */; };
 		A9BDA35D247CC7D30016CB9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BDA35C247CC7D30016CB9C /* Assets.xcassets */; };
 		A9BDA360247CC7D30016CB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BDA35E247CC7D30016CB9C /* LaunchScreen.storyboard */; };
 		A9BDA36B247CC7D30016CB9C /* wooptestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA36A247CC7D30016CB9C /* wooptestTests.swift */; };
 		A9BDA376247CC7D30016CB9C /* wooptestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA375247CC7D30016CB9C /* wooptestUITests.swift */; };
+		A9BDA397247CCC980016CB9C /* WPEventsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA389247CCC980016CB9C /* WPEventsInteractor.swift */; };
+		A9BDA398247CCC980016CB9C /* WPEventsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA38B247CCC980016CB9C /* WPEventsProtocols.swift */; };
+		A9BDA399247CCC980016CB9C /* WPEventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA38D247CCC980016CB9C /* WPEventsRouter.swift */; };
+		A9BDA39A247CCC980016CB9C /* WPEventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA38F247CCC980016CB9C /* WPEventsService.swift */; };
+		A9BDA39B247CCC980016CB9C /* WPEventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA391247CCC980016CB9C /* WPEventsPresenter.swift */; };
+		A9BDA39C247CCC980016CB9C /* WPEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA393247CCC980016CB9C /* WPEvent.swift */; };
+		A9BDA39D247CCC980016CB9C /* WPEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA395247CCC980016CB9C /* WPEventsViewController.swift */; };
+		A9BDA39E247CCC980016CB9C /* RequestLocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA396247CCC980016CB9C /* RequestLocationPermissionViewController.swift */; };
+		A9BDA3A0247CCCB40016CB9C /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BDA39F247CCCB40016CB9C /* Events.storyboard */; };
+		A9BDA3A3247CD20C0016CB9C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA3A2247CD20C0016CB9C /* Constants.swift */; };
+		ADDF3DF2ED9EBC7C8C01B9D7 /* Pods_wooptest_wooptestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB70158DA996DAAAE2D3C0B3 /* Pods_wooptest_wooptestUITests.framework */; };
+		F2B6545D80267B56E28D0ADE /* Pods_wooptest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79DBA499871A4FBDF3C1D58 /* Pods_wooptest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06A1343B279E32C2507F7E1E /* Pods-wooptest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wooptest.release.xcconfig"; path = "Target Support Files/Pods-wooptest/Pods-wooptest.release.xcconfig"; sourceTree = "<group>"; };
+		0B577F31ECDF41B59AD13AF9 /* Pods-wooptest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wooptest.debug.xcconfig"; path = "Target Support Files/Pods-wooptest/Pods-wooptest.debug.xcconfig"; sourceTree = "<group>"; };
+		43011D0D676ACBE8E98A5053 /* Pods-wooptestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wooptestTests.release.xcconfig"; path = "Target Support Files/Pods-wooptestTests/Pods-wooptestTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CCD3C4426178A574A87A3CA /* Pods_wooptestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wooptestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9ADB410248016FB00F58D11 /* WPEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPEventTableViewCell.swift; sourceTree = "<group>"; };
+		A9ADB41424802ECA00F58D11 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A9BDA350247CC7D20016CB9C /* wooptest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wooptest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BDA353247CC7D20016CB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9BDA355247CC7D20016CB9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A9BDA357247CC7D20016CB9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A9BDA35A247CC7D20016CB9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9BDA35C247CC7D30016CB9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +68,21 @@
 		A9BDA371247CC7D30016CB9C /* wooptestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wooptestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BDA375247CC7D30016CB9C /* wooptestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wooptestUITests.swift; sourceTree = "<group>"; };
 		A9BDA377247CC7D30016CB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9BDA389247CCC980016CB9C /* WPEventsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPEventsInteractor.swift; sourceTree = "<group>"; };
+		A9BDA38B247CCC980016CB9C /* WPEventsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPEventsProtocols.swift; sourceTree = "<group>"; };
+		A9BDA38D247CCC980016CB9C /* WPEventsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPEventsRouter.swift; sourceTree = "<group>"; };
+		A9BDA38F247CCC980016CB9C /* WPEventsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPEventsService.swift; sourceTree = "<group>"; };
+		A9BDA391247CCC980016CB9C /* WPEventsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPEventsPresenter.swift; sourceTree = "<group>"; };
+		A9BDA393247CCC980016CB9C /* WPEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPEvent.swift; sourceTree = "<group>"; };
+		A9BDA395247CCC980016CB9C /* WPEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPEventsViewController.swift; sourceTree = "<group>"; };
+		A9BDA396247CCC980016CB9C /* RequestLocationPermissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLocationPermissionViewController.swift; sourceTree = "<group>"; };
+		A9BDA39F247CCCB40016CB9C /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		A9BDA3A2247CD20C0016CB9C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ABC8B26B0B6D34A13CB13DCC /* Pods-wooptest-wooptestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wooptest-wooptestUITests.release.xcconfig"; path = "Target Support Files/Pods-wooptest-wooptestUITests/Pods-wooptest-wooptestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB70158DA996DAAAE2D3C0B3 /* Pods_wooptest_wooptestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wooptest_wooptestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7EAB41E26661CD86A185EA /* Pods-wooptestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wooptestTests.debug.xcconfig"; path = "Target Support Files/Pods-wooptestTests/Pods-wooptestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E79DBA499871A4FBDF3C1D58 /* Pods_wooptest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wooptest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7EAB5EA5F9BA4618B0409AF /* Pods-wooptest-wooptestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wooptest-wooptestUITests.debug.xcconfig"; path = "Target Support Files/Pods-wooptest-wooptestUITests/Pods-wooptest-wooptestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B6545D80267B56E28D0ADE /* Pods_wooptest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D414FD4525EC4C772DA81FB /* Pods_wooptestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +106,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADDF3DF2ED9EBC7C8C01B9D7 /* Pods_wooptest_wooptestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A00FDEBAFAC27237DF0AA13D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B577F31ECDF41B59AD13AF9 /* Pods-wooptest.debug.xcconfig */,
+				06A1343B279E32C2507F7E1E /* Pods-wooptest.release.xcconfig */,
+				F7EAB5EA5F9BA4618B0409AF /* Pods-wooptest-wooptestUITests.debug.xcconfig */,
+				ABC8B26B0B6D34A13CB13DCC /* Pods-wooptest-wooptestUITests.release.xcconfig */,
+				CD7EAB41E26661CD86A185EA /* Pods-wooptestTests.debug.xcconfig */,
+				43011D0D676ACBE8E98A5053 /* Pods-wooptestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4C7334E654094D33AB5B241 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E79DBA499871A4FBDF3C1D58 /* Pods_wooptest.framework */,
+				BB70158DA996DAAAE2D3C0B3 /* Pods_wooptest_wooptestUITests.framework */,
+				5CCD3C4426178A574A87A3CA /* Pods_wooptestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9ADB40F248016D900F58D11 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADB410248016FB00F58D11 /* WPEventTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A9ADB41224802EA900F58D11 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADB41324802EBA00F58D11 /* UIKit */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A9ADB41324802EBA00F58D11 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADB41424802ECA00F58D11 /* UIView+Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		A9BDA347247CC7D20016CB9C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +167,8 @@
 				A9BDA369247CC7D30016CB9C /* wooptestTests */,
 				A9BDA374247CC7D30016CB9C /* wooptestUITests */,
 				A9BDA351247CC7D20016CB9C /* Products */,
+				A00FDEBAFAC27237DF0AA13D /* Pods */,
+				A4C7334E654094D33AB5B241 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +185,13 @@
 		A9BDA352247CC7D20016CB9C /* wooptest */ = {
 			isa = PBXGroup;
 			children = (
-				A9BDA353247CC7D20016CB9C /* AppDelegate.swift */,
-				A9BDA355247CC7D20016CB9C /* SceneDelegate.swift */,
+				A9ADB41224802EA900F58D11 /* Extension */,
+				A9BDA3A1247CD1FE0016CB9C /* Utils */,
+				A9BDA385247CCBF40016CB9C /* Supporting Files */,
+				A9BDA384247CCBD90016CB9C /* ThirdParty */,
+				A9BDA383247CCBD00016CB9C /* Modules */,
 				A9BDA357247CC7D20016CB9C /* ViewController.swift */,
 				A9BDA359247CC7D20016CB9C /* Main.storyboard */,
-				A9BDA35C247CC7D30016CB9C /* Assets.xcassets */,
-				A9BDA35E247CC7D30016CB9C /* LaunchScreen.storyboard */,
-				A9BDA361247CC7D30016CB9C /* Info.plist */,
 			);
 			path = wooptest;
 			sourceTree = "<group>";
@@ -128,6 +214,121 @@
 			path = wooptestUITests;
 			sourceTree = "<group>";
 		};
+		A9BDA383247CCBD00016CB9C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA387247CCC2B0016CB9C /* EventDetail */,
+				A9BDA386247CCC220016CB9C /* Events */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A9BDA384247CCBD90016CB9C /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		A9BDA385247CCBF40016CB9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA35C247CC7D30016CB9C /* Assets.xcassets */,
+				A9BDA361247CC7D30016CB9C /* Info.plist */,
+				A9BDA35E247CC7D30016CB9C /* LaunchScreen.storyboard */,
+				A9BDA353247CC7D20016CB9C /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9BDA386247CCC220016CB9C /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA392247CCC980016CB9C /* Entities */,
+				A9BDA388247CCC980016CB9C /* Interactor */,
+				A9BDA390247CCC980016CB9C /* Presenter */,
+				A9BDA38A247CCC980016CB9C /* Protocols */,
+				A9BDA38C247CCC980016CB9C /* Router */,
+				A9BDA38E247CCC980016CB9C /* Service */,
+				A9BDA394247CCC980016CB9C /* View */,
+				A9BDA39F247CCCB40016CB9C /* Events.storyboard */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		A9BDA387247CCC2B0016CB9C /* EventDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EventDetail;
+			sourceTree = "<group>";
+		};
+		A9BDA388247CCC980016CB9C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA389247CCC980016CB9C /* WPEventsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A9BDA38A247CCC980016CB9C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA38B247CCC980016CB9C /* WPEventsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A9BDA38C247CCC980016CB9C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA38D247CCC980016CB9C /* WPEventsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A9BDA38E247CCC980016CB9C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA38F247CCC980016CB9C /* WPEventsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A9BDA390247CCC980016CB9C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA391247CCC980016CB9C /* WPEventsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A9BDA392247CCC980016CB9C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA393247CCC980016CB9C /* WPEvent.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A9BDA394247CCC980016CB9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADB40F248016D900F58D11 /* Cells */,
+				A9BDA395247CCC980016CB9C /* WPEventsViewController.swift */,
+				A9BDA396247CCC980016CB9C /* RequestLocationPermissionViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9BDA3A1247CD1FE0016CB9C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA3A2247CD20C0016CB9C /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +336,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9BDA37A247CC7D30016CB9C /* Build configuration list for PBXNativeTarget "wooptest" */;
 			buildPhases = (
+				F8D5CBA146BC3AC7F31BA926 /* [CP] Check Pods Manifest.lock */,
 				A9BDA34C247CC7D20016CB9C /* Sources */,
 				A9BDA34D247CC7D20016CB9C /* Frameworks */,
 				A9BDA34E247CC7D20016CB9C /* Resources */,
+				687DCFE0B78C3AA5ACB80174 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +355,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9BDA37D247CC7D30016CB9C /* Build configuration list for PBXNativeTarget "wooptestTests" */;
 			buildPhases = (
+				EA73A76419822DC937888332 /* [CP] Check Pods Manifest.lock */,
 				A9BDA362247CC7D30016CB9C /* Sources */,
 				A9BDA363247CC7D30016CB9C /* Frameworks */,
 				A9BDA364247CC7D30016CB9C /* Resources */,
@@ -170,9 +374,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9BDA380247CC7D30016CB9C /* Build configuration list for PBXNativeTarget "wooptestUITests" */;
 			buildPhases = (
+				813C29480D69C676A0912E23 /* [CP] Check Pods Manifest.lock */,
 				A9BDA36D247CC7D30016CB9C /* Sources */,
 				A9BDA36E247CC7D30016CB9C /* Frameworks */,
 				A9BDA36F247CC7D30016CB9C /* Resources */,
+				86CFF417F0400C9D9562928F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9BDA360247CC7D30016CB9C /* LaunchScreen.storyboard in Resources */,
+				A9BDA3A0247CCCB40016CB9C /* Events.storyboard in Resources */,
 				A9BDA35D247CC7D30016CB9C /* Assets.xcassets in Resources */,
 				A9BDA35B247CC7D20016CB9C /* Main.storyboard in Resources */,
 			);
@@ -254,14 +461,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		687DCFE0B78C3AA5ACB80174 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wooptest/Pods-wooptest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wooptest/Pods-wooptest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wooptest/Pods-wooptest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813C29480D69C676A0912E23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wooptest-wooptestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86CFF417F0400C9D9562928F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wooptest-wooptestUITests/Pods-wooptest-wooptestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wooptest-wooptestUITests/Pods-wooptest-wooptestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wooptest-wooptestUITests/Pods-wooptest-wooptestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA73A76419822DC937888332 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wooptestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8D5CBA146BC3AC7F31BA926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wooptest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9BDA34C247CC7D20016CB9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BDA39A247CCC980016CB9C /* WPEventsService.swift in Sources */,
+				A9ADB41524802ECA00F58D11 /* UIView+Extension.swift in Sources */,
 				A9BDA358247CC7D20016CB9C /* ViewController.swift in Sources */,
+				A9BDA39C247CCC980016CB9C /* WPEvent.swift in Sources */,
+				A9BDA399247CCC980016CB9C /* WPEventsRouter.swift in Sources */,
+				A9BDA398247CCC980016CB9C /* WPEventsProtocols.swift in Sources */,
+				A9ADB411248016FB00F58D11 /* WPEventTableViewCell.swift in Sources */,
+				A9BDA39D247CCC980016CB9C /* WPEventsViewController.swift in Sources */,
 				A9BDA354247CC7D20016CB9C /* AppDelegate.swift in Sources */,
-				A9BDA356247CC7D20016CB9C /* SceneDelegate.swift in Sources */,
+				A9BDA39E247CCC980016CB9C /* RequestLocationPermissionViewController.swift in Sources */,
+				A9BDA397247CCC980016CB9C /* WPEventsInteractor.swift in Sources */,
+				A9BDA39B247CCC980016CB9C /* WPEventsPresenter.swift in Sources */,
+				A9BDA3A3247CD20C0016CB9C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,10 +752,12 @@
 		};
 		A9BDA37B247CC7D30016CB9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B577F31ECDF41B59AD13AF9 /* Pods-wooptest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = wooptest/Info.plist;
+				INFOPLIST_FILE = "wooptest/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,10 +771,12 @@
 		};
 		A9BDA37C247CC7D30016CB9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06A1343B279E32C2507F7E1E /* Pods-wooptest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = wooptest/Info.plist;
+				INFOPLIST_FILE = "wooptest/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +790,7 @@
 		};
 		A9BDA37E247CC7D30016CB9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD7EAB41E26661CD86A185EA /* Pods-wooptestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +812,7 @@
 		};
 		A9BDA37F247CC7D30016CB9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43011D0D676ACBE8E98A5053 /* Pods-wooptestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +834,7 @@
 		};
 		A9BDA381247CC7D30016CB9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7EAB5EA5F9BA4618B0409AF /* Pods-wooptest-wooptestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +854,7 @@
 		};
 		A9BDA382247CC7D30016CB9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABC8B26B0B6D34A13CB13DCC /* Pods-wooptest-wooptestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

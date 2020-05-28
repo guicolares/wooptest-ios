@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.0.4)
+  - CRNotifications (1.2.1)
+  - ImageLoader (0.15.0)
+  - SwiftDate (6.1.0)
+  - SwiftLint (0.39.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0)
+  - CRNotifications
+  - ImageLoader
+  - SwiftDate (~> 6.1)
+  - SwiftLint (~> 0.39)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CRNotifications
+    - ImageLoader
+    - SwiftDate
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 0fe5fd24b4298dc377a6550da7d5f1b30e286fcb
+  CRNotifications: 2799786cb63e104c75699843d8928afd680182f3
+  ImageLoader: e0635d52020d64dc7687e3a3b14dc53212ac0442
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
+
+PODFILE CHECKSUM: 101d1b3370752869fcfae91ad05766548e9b2665
+
+COCOAPODS: 1.8.4
