@@ -26,9 +26,6 @@ class WPEventDetailInteractor: WPEventDetailInteractorInputProtocol {
         
         service?.makeCheckin(payload: payload)
     }
-    
-    
-   
 }
 
 extension WPEventDetailInteractor: WPEventDetailServiceOutputProtocol {
@@ -49,4 +46,3 @@ extension WPEventDetailInteractor: WPEventDetailServiceOutputProtocol {
         presenter?.onErrorCheckin()
     }
 }
-

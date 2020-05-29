@@ -15,7 +15,7 @@ class WPEventsService: WPEventsServiceInputProtocol {
     // MARK: - Enums
     
     enum CustomURL: String {
-        case events = "events"
+        case events
     }
     
     // MARK: - Functions
@@ -26,7 +26,6 @@ class WPEventsService: WPEventsServiceInputProtocol {
             switch response.result {
                 
             case let .success(data):
-                print(data)
                 do {
                     let events = try JSONDecoder().decode([WPEvent].self, from: data)
                     self.eventsServiceHandler?.didFetchEvents(events: events)

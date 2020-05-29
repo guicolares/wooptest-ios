@@ -13,15 +13,13 @@ struct WPEvent: Codable {
     let cupons: [WPCupon]
     
     var location: CLLocation {
-        get {
-            return CLLocation(latitude: latitude, longitude: longitude)
-        }
+        return CLLocation(latitude: latitude, longitude: longitude)
+        
     }
     
     var dateObj: Date {
-        get {
-            return Date(milliseconds: date)
-        }
+        return Date(milliseconds: date)
+        
     }
 
     enum CodingKeys: String, CodingKey {

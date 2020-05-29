@@ -22,7 +22,8 @@ class WPEventDetailRouter: WPEventDetailRouterProtocol {
         let router = WPEventDetailRouter()
         let service = WPEventDetailService()
         
-        guard let viewController = storyboard.instantiateViewController(withIdentifier: "EventDetailTableViewController") as? WPEventDetailTableViewController else {
+        guard let viewController = storyboard.instantiateViewController(
+            withIdentifier: "EventDetailTableViewController") as? WPEventDetailTableViewController else {
             fatalError()
         }
         
@@ -37,9 +38,5 @@ class WPEventDetailRouter: WPEventDetailRouterProtocol {
     }
     
     func showDetail(from view: WPEventsViewProtocol, eventSelected: WPEvent) {
-        
-        
     }
-    
-        
 }

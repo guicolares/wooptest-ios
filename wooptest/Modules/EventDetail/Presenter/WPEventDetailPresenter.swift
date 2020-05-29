@@ -13,7 +13,6 @@ class WPEventDetailPresenter: WPEventDetailPresenterProtocol {
     var interactor: WPEventDetailInteractorInputProtocol?
     var router: WPEventDetailRouterProtocol?
 
-    
     func fetchEventDetail() {
         interactor?.fetchEventDetail()
     }

@@ -19,7 +19,8 @@ class WPEventsRouter: WPEventsRouterProtocol {
         let router = WPEventsRouter()
         let service = WPEventsService()
         
-        guard let nvc = storyboard.instantiateViewController(withIdentifier: "EventsNavigationViewController") as? UINavigationController,
+        guard let nvc = storyboard.instantiateViewController(
+            withIdentifier: "EventsNavigationViewController") as? UINavigationController,
             let viewController = nvc.topViewController as? WPEventsViewController else {
             fatalError()
         }

@@ -12,5 +12,4 @@ class WPDescriptionTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblDescription: UILabel!
     
-
 }

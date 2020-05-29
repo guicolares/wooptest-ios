@@ -9,7 +9,6 @@
 import UIKit
 import ImageLoader
 
-
 class WPEventTableViewCell: UITableViewCell {
     
     // MARK: Proprietes
@@ -43,9 +42,4 @@ class WPEventTableViewCell: UITableViewCell {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDay: UILabel!
     @IBOutlet weak var lblMonth: UILabel!
-    
-    
-    
-    
 }
-

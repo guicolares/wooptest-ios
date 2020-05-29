@@ -10,7 +10,6 @@ import UIKit
 
 class WPCheckinTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var checkinButton: UIButton! {
         didSet {
             checkinButton.layer.cornerRadius = 3

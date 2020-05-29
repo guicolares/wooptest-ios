@@ -164,7 +164,7 @@
                                     <outlet property="checkinButton" destination="GWI-UZ-IaU" id="cCt-vU-ANs"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MapViewCell" rowHeight="125" id="VcA-WF-Cyz">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WPMapTableViewCell" rowHeight="125" id="VcA-WF-Cyz" customClass="WPMapTableViewCell" customModule="wooptest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="446" width="414" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VcA-WF-Cyz" id="z4a-Bv-L8X">
@@ -199,6 +199,10 @@
                                         <constraint firstItem="zOY-Za-dIJ" firstAttribute="top" secondItem="z4a-Bv-L8X" secondAttribute="top" id="zZE-z4-398"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblDistance" destination="zOY-Za-dIJ" id="GyZ-dU-B3j"/>
+                                    <outlet property="mapView" destination="W18-of-yvV" id="EKp-Hm-PW7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -211,32 +215,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jgh-oN-Zb7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1013.0434782608696" y="-144.64285714285714"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="l1e-Vj-6aj">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fn6-VS-JJK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="PJp-GM-cBp">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.01314816345" green="0.90116256480000001" blue="0.46509373189999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.01314816345" green="0.90116256480000001" blue="0.46509373189999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="YHP-Gh-xfi" kind="relationship" relationship="rootViewController" id="Nhj-W1-puw"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I7V-o4-EXp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="102.89855072463769" y="-144.64285714285714"/>
         </scene>
     </scenes>
 </document>

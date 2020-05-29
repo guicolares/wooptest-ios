@@ -15,6 +15,10 @@
 		A91EE317248081770010B289 /* WPDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91EE316248081770010B289 /* WPDescriptionTableViewCell.swift */; };
 		A91EE319248082070010B289 /* WPCheckinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91EE318248082070010B289 /* WPCheckinTableViewCell.swift */; };
 		A91EE31C24808B7D0010B289 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91EE31B24808B7D0010B289 /* UIApplication+Extension.swift */; };
+		A91EE31E248098DC0010B289 /* WPMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91EE31D248098DC0010B289 /* WPMapTableViewCell.swift */; };
+		A91EE32124809A0C0010B289 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91EE32024809A0C0010B289 /* MapKit.framework */; };
+		A91EE32424809ACD0010B289 /* WPEventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91EE32324809ACD0010B289 /* WPEventAnnotation.swift */; };
+		A96EDDA32480A1CF00266D80 /* CoreLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96EDDA22480A1CF00266D80 /* CoreLocation+Extension.swift */; };
 		A9ADB411248016FB00F58D11 /* WPEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADB410248016FB00F58D11 /* WPEventTableViewCell.swift */; };
 		A9ADB41524802ECA00F58D11 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADB41424802ECA00F58D11 /* UIView+Extension.swift */; };
 		A9ADB42024803B0900F58D11 /* WPEventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADB41F24803B0900F58D11 /* WPEventDetail.swift */; };
@@ -72,6 +76,10 @@
 		A91EE316248081770010B289 /* WPDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		A91EE318248082070010B289 /* WPCheckinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPCheckinTableViewCell.swift; sourceTree = "<group>"; };
 		A91EE31B24808B7D0010B289 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		A91EE31D248098DC0010B289 /* WPMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPMapTableViewCell.swift; sourceTree = "<group>"; };
+		A91EE32024809A0C0010B289 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A91EE32324809ACD0010B289 /* WPEventAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPEventAnnotation.swift; sourceTree = "<group>"; };
+		A96EDDA22480A1CF00266D80 /* CoreLocation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation+Extension.swift"; sourceTree = "<group>"; };
 		A9ADB410248016FB00F58D11 /* WPEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPEventTableViewCell.swift; sourceTree = "<group>"; };
 		A9ADB41424802ECA00F58D11 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A9ADB41F24803B0900F58D11 /* WPEventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPEventDetail.swift; sourceTree = "<group>"; };
@@ -114,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91EE32124809A0C0010B289 /* MapKit.framework in Frameworks */,
 				F2B6545D80267B56E28D0ADE /* Pods_wooptest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +162,7 @@
 		A4C7334E654094D33AB5B241 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A91EE32024809A0C0010B289 /* MapKit.framework */,
 				E79DBA499871A4FBDF3C1D58 /* Pods_wooptest.framework */,
 				BB70158DA996DAAAE2D3C0B3 /* Pods_wooptest_wooptestUITests.framework */,
 				5CCD3C4426178A574A87A3CA /* Pods_wooptestTests.framework */,
@@ -167,6 +177,7 @@
 				A91EE314248076C90010B289 /* WPTitleTableViewCell.swift */,
 				A91EE316248081770010B289 /* WPDescriptionTableViewCell.swift */,
 				A91EE318248082070010B289 /* WPCheckinTableViewCell.swift */,
+				A91EE31D248098DC0010B289 /* WPMapTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -177,6 +188,22 @@
 				A91EE31B24808B7D0010B289 /* UIApplication+Extension.swift */,
 			);
 			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		A91EE32224809A9E0010B289 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				A91EE32324809ACD0010B289 /* WPEventAnnotation.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		A96EDDA12480A1BD00266D80 /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A96EDDA22480A1CF00266D80 /* CoreLocation+Extension.swift */,
+			);
+			path = CoreLocation;
 			sourceTree = "<group>";
 		};
 		A9ADB40F248016D900F58D11 /* Cells */ = {
@@ -190,6 +217,7 @@
 		A9ADB41224802EA900F58D11 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A96EDDA12480A1BD00266D80 /* CoreLocation */,
 				A91EE31A24808B690010B289 /* UIApplication */,
 				A9ADB41324802EBA00F58D11 /* UIKit */,
 			);
@@ -240,6 +268,7 @@
 		A9ADB41C248039E000F58D11 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A91EE32224809A9E0010B289 /* Annotations */,
 				A91EE311248075710010B289 /* Cells */,
 				A91EE30F2480533A0010B289 /* WPEventDetailTableViewController.swift */,
 			);
@@ -449,6 +478,7 @@
 				A9BDA34D247CC7D20016CB9C /* Frameworks */,
 				A9BDA34E247CC7D20016CB9C /* Resources */,
 				687DCFE0B78C3AA5ACB80174 /* [CP] Embed Pods Frameworks */,
+				A91EE31F248099DF0010B289 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -626,6 +656,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wooptest-wooptestUITests/Pods-wooptest-wooptestUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A91EE31F248099DF0010B289 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		EA73A76419822DC937888332 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -687,15 +734,18 @@
 				A9ADB42224803B9000F58D11 /* WPEventDetailService.swift in Sources */,
 				A91EE313248075800010B289 /* WPBannerTableViewCell.swift in Sources */,
 				A9BDA399247CCC980016CB9C /* WPEventsRouter.swift in Sources */,
+				A91EE32424809ACD0010B289 /* WPEventAnnotation.swift in Sources */,
 				A9BDA398247CCC980016CB9C /* WPEventsProtocols.swift in Sources */,
 				A9ADB42424803BF900F58D11 /* WPEventDetailProtocols.swift in Sources */,
 				A9ADB411248016FB00F58D11 /* WPEventTableViewCell.swift in Sources */,
 				A9BDA39D247CCC980016CB9C /* WPEventsViewController.swift in Sources */,
 				A9BDA354247CC7D20016CB9C /* AppDelegate.swift in Sources */,
+				A91EE31E248098DC0010B289 /* WPMapTableViewCell.swift in Sources */,
 				A91EE3102480533A0010B289 /* WPEventDetailTableViewController.swift in Sources */,
 				A9ADB42824803D8D00F58D11 /* WPEventDetailInteractor.swift in Sources */,
 				A9BDA39E247CCC980016CB9C /* RequestLocationPermissionViewController.swift in Sources */,
 				A9ADB42A24803EF000F58D11 /* WPMakeCheckinPayload.swift in Sources */,
+				A96EDDA32480A1CF00266D80 /* CoreLocation+Extension.swift in Sources */,
 				A9BDA397247CCC980016CB9C /* WPEventsInteractor.swift in Sources */,
 				A91EE315248076C90010B289 /* WPTitleTableViewCell.swift in Sources */,
 				A9BDA39B247CCC980016CB9C /* WPEventsPresenter.swift in Sources */,
