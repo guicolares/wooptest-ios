@@ -19,6 +19,7 @@ protocol WPEventDetailViewProtocol: class {
     func showCheckinSuccess()
     func showError()
     func showCheckinError()
+    func showCheckinInvalidForm(message: String)
 }
 
 protocol WPEventDetailPresenterProtocol: class {

@@ -109,6 +109,7 @@ class WPEventDetailTableViewController: UITableViewController {
         )
         alertFormController.addTextField { (nameTextField) in
             nameTextField.placeholder = "Nome"
+            nameTextField.becomeFirstResponder()
             nameTextField.keyboardType = .alphabet
         }
         
@@ -246,11 +247,16 @@ extension WPEventDetailTableViewController: WPEventDetailViewProtocol {
             dismissDelay: 5
         )
     }
-}
-
-// MARK: - CoreLocation Delegates
-extension WPEventDetailTableViewController: CLLocationManagerDelegate {
     
+    func showCheckinInvalidForm(message: String) {
+        view.stopLoader()
+        CRNotifications.showNotification(
+            type: CRNotifications.error,
+            title: "Peraí, isso é constrangedor!",
+            message: "\(message)",
+            dismissDelay: 5
+        )
+    }
 }
 
 private enum TableViewCellType: Int {

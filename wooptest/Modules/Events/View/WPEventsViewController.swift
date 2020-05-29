@@ -85,7 +85,6 @@ class WPEventsViewController: UITableViewController {
             }
         }
     }
-    
 }
 
 // MARK: Extension - Events View Protocol

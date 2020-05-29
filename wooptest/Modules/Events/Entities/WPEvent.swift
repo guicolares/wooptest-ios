@@ -6,7 +6,7 @@ import SwiftDate
 struct WPEvent: Codable {
     let people: [WPPerson]
     let date: Int
-    let fdFuelStationDescription: String
+    let description: String
     let image: String
     let longitude, latitude, price: Double
     let title, id: String
@@ -24,7 +24,7 @@ struct WPEvent: Codable {
 
     enum CodingKeys: String, CodingKey {
         case people, date
-        case fdFuelStationDescription = "description"
+        case description
         case image, longitude, latitude, price, title, id, cupons
     }
 }

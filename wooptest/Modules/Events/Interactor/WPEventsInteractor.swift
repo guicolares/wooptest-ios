@@ -12,6 +12,8 @@ class WPEventsInteractor: WPEventsInteractorInputProtocol {
     
     var service: WPEventsServiceInputProtocol?
     
+    var events: [WPEvent] = []
+    
     func fetchEvents() {
         service?.fetchEvents()
     }
@@ -20,6 +22,7 @@ class WPEventsInteractor: WPEventsInteractorInputProtocol {
 extension WPEventsInteractor: WPEventsServiceOutputProtocol {
     
     func didFetchEvents(events: [WPEvent]) {
+        self.events = events
         presenter?.didFetchEvents(events)
     }
     

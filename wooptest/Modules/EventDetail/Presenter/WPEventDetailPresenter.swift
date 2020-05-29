@@ -18,6 +18,11 @@ class WPEventDetailPresenter: WPEventDetailPresenterProtocol {
     }
     
     func makeCheckin(name: String, email: String) {
+        if name == "" || email == "" {
+            view?.showCheckinInvalidForm(message: "Nome ou e-mail inválidos")
+            return
+        }
+        
         interactor?.makeCheckin(name: name, email: email)
     }
 }
