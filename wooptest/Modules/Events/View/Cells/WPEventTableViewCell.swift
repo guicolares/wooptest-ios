@@ -16,7 +16,6 @@ class WPEventTableViewCell: UITableViewCell {
     var event: WPEvent! {
         didSet {
             lblTitle.text = event.title
-            print(event.image)
             bannerImageView.load.request(with: event.image)
             //format date
             lblDay.text = "\(event.dateObj.day)"
@@ -36,7 +35,7 @@ class WPEventTableViewCell: UITableViewCell {
         didSet {
             infoView.layer.cornerRadius = 3
             infoView.layer.masksToBounds = true
-            infoView.layer.borderWidth = 1
+            infoView.layer.borderWidth = 0.5
             infoView.layer.borderColor = UIColor.gray.cgColor
         }
     }

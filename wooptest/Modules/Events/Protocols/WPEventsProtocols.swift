@@ -60,6 +60,6 @@ protocol WPEventsServiceOutputProtocol: class {
 protocol WPEventsRouterProtocol: class {
     //PRESENTER -> ROUTER
     func build() -> UIViewController
-    func showDetail(from view: WPEventsViewProtocol)
+    func showDetail(from view: WPEventsViewProtocol, eventSelected: WPEvent)
     
 }

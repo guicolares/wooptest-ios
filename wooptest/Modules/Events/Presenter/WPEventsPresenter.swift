@@ -16,7 +16,7 @@ class WPEventsPresenter: WPEventsPresenterProtocol {
     
     // MARK: - Functions
     func clickOnShowEventDetail(event: WPEvent) {
-        
+        router?.showDetail(from: view!, eventSelected: event)
     }
     
     func fetchEvents() {
@@ -33,5 +33,4 @@ extension WPEventsPresenter: WPEventsInteractorOutputProtcol {
     func onError() {
         view?.showError()
     }
-    
 }

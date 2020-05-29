@@ -9,6 +9,11 @@
 import UIKit
 
 extension UIView {
+    
+    class var identifier: String {
+        return String(describing: self)
+    }
+    
     func startLoader(withProgress: Bool? = nil) {
         let distanceToBottom = CGFloat(100)
         let progressBarSize = CGFloat(200)

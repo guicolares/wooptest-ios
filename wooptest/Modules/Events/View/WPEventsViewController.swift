@@ -11,6 +11,8 @@ import UIKit
 import AVFoundation
 import CRNotifications
 
+private var eventsCell = "EventCell"
+
 class WPEventsViewController: UITableViewController {
     // MARK: - Proprietes
     var presenter: WPEventsPresenter?
@@ -32,22 +34,26 @@ class WPEventsViewController: UITableViewController {
         super.viewDidAppear(animated)
     }
     
+    // MARK: TableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return events.count
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //show event detail
-    }
-    
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let event = events[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as! WPEventTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: eventsCell, for: indexPath) as! WPEventTableViewCell
         cell.event = event
         return cell
     }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let event = events[indexPath.row]
+        presenter?.clickOnShowEventDetail(event: event)
+    }
 }
 
+// MARK: Extension - Events View Protocol
 extension WPEventsViewController: WPEventsViewProtocol {
     func showEvents(_ events: [WPEvent]) {
         view.stopLoader()
